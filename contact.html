@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact - LuxeScent</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<div class="container">
+<a href="index.html" class="logo">LUXE<span>SCENT</span></a>
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="shop.html">Shop</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html" class="active">Contact</a></li>
+</ul>
+</nav>
+<div class="header-icons">
+<a href="cart.html" class="cart-icon"><i class="fas fa-shopping-bag"></i><span id="cart-count">0</span></a>
+<button class="hamburger" aria-label="Menu"><i class="fas fa-bars"></i></button>
+</div>
+</div>
+</header>
+
+<section class="contact-page">
+<div class="container">
+<div class="text-center reveal">
+<h1>Get in Touch</h1>
+<p class="section-subtitle">We'd love to hear from you</p>
+</div>
+<div class="contact-grid">
+<div class="contact-info reveal">
+<h3>Contact Information</h3>
+<div class="info-item"><i class="fab fa-whatsapp"></i><span>+212 661-803030</span></div>
+<div class="info-item"><i class="fas fa-envelope"></i><span>hello@luxescent.com</span></div>
+<div class="info-item"><i class="fas fa-map-marker-alt"></i><span>Casablanca, Morocco</span></div>
+<div class="info-item"><i class="fas fa-clock"></i><span>Mon-Sat: 9:00 AM - 8:00 PM</span></div>
+<div style="margin-top:25px">
+<a href="https://wa.me/212661803030" class="btn btn-primary" target="_blank"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
+</div>
+</div>
+<div class="contact-form reveal">
+<form id="contactForm" onsubmit="event.preventDefault();const name=document.getElementById('cname').value,email=document.getElementById('cemail').value,msg=document.getElementById('cmsg').value;if(name&&email&&msg){window.open('https://wa.me/212661803030?text='+encodeURIComponent('Name: '+name+'%0AEmail: '+email+'%0AMessage: '+msg),'_blank')}else{alert('Please fill in all fields')}">
+<div class="form-group">
+<label for="cname">Your Name</label>
+<input type="text" id="cname" placeholder="Enter your name" required>
+</div>
+<div class="form-group">
+<label for="cemail">Your Email</label>
+<input type="email" id="cemail" placeholder="Enter your email" required>
+</div>
+<div class="form-group">
+<label for="csubject">Subject</label>
+<select id="csubject">
+<option value="General Inquiry">General Inquiry</option>
+<option value="Order Status">Order Status</option>
+<option value="Product Question">Product Question</option>
+<option value="Returns">Returns</option>
+<option value="Other">Other</option>
+</select>
+</div>
+<div class="form-group">
+<label for="cmsg">Your Message</label>
+<textarea id="cmsg" placeholder="Write your message..." required></textarea>
+</div>
+<button type="submit" class="btn btn-primary"><i class="fab fa-whatsapp"></i> Send via WhatsApp</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+
+<footer>
+<div class="container">
+<div class="footer-grid">
+<div class="footer-col">
+<h3>LUXE<span>SCENT</span></h3>
+<p>Your destination for premium perfumes and designer handbags. Curated elegance for the discerning client.</p>
+<div class="social-links">
+<a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+<a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+<a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+</div>
+</div>
+<div class="footer-col">
+<h4>Quick Links</h4>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="shop.html">Shop All</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h4>Contact</h4>
+<ul>
+<li><i class="fab fa-whatsapp"></i> +212 661-803030</li>
+<li><i class="fas fa-envelope"></i> hello@luxescent.com</li>
+<li><i class="fas fa-map-marker-alt"></i> Casablanca, Morocco</li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom"><p>&copy; 2026 LuxeScent. All rights reserved.</p></div>
+</div>
+</footer>
+
+<a href="https://wa.me/212661803030" class="whatsapp-float" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+<button class="back-to-top" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+<script src="script.js"></script>
+</body>
+</html>
